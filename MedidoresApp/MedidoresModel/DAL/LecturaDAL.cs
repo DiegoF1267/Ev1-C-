@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace MedidoresModel.DAL
 {
-    class MedidorConsumo
+    class LecturaDAL
     {
     }
 }

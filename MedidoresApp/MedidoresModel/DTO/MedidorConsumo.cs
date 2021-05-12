@@ -6,7 +6,9 @@ using System.Threading.Tasks;
 
 namespace MedidoresModel.DTO
 {
-    class MedidorConsumo
+    class MedidorConsumo : Medidor
     {
+        private double consumoKwh;
+
     }
 }

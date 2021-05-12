@@ -8,5 +8,7 @@ namespace MedidoresModel.DTO
 {
     class Medidor
     {
+        private int id;
+        private string tipo;
     }
 }
