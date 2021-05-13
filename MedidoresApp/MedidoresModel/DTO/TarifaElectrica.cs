@@ -6,7 +6,10 @@ using System.Threading.Tasks;
 
 namespace MedidoresModel.DTO
 {
-    class tarifa_electrica
+    public class tarifa_electrica
     {
+        private int codigoTarifa;
+        private Region region;
+        private int cobro;
     }
 }

@@ -6,9 +6,11 @@ using System.Threading.Tasks;
 
 namespace MedidoresModel.DTO
 {
-    public class Medidor
+    public class Estacion
     {
         private int id;
-        private string tipo;
+        private Region region;
+        private string capacidadMaxPuntos;
+        private string horarioAtencion;
     }
 }

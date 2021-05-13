@@ -6,7 +6,9 @@ using System.Threading.Tasks;
 
 namespace MedidoresModel.DTO
 {
-    class mensaje
+    public class mensaje
     {
+        private int id;
+        private string contenido;
     }
 }

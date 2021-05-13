@@ -45,10 +45,12 @@
     <Compile Include="DAL\LecturaDAL.cs" />
     <Compile Include="DAL\MedidorDALArchivos.cs" />
     <Compile Include="DAL\MedidorDALFactory.cs" />
+    <Compile Include="DTO\Estacion.cs" />
     <Compile Include="DTO\MedidorTrafico.cs" />
     <Compile Include="DTO\Medidor.cs" />
     <Compile Include="DTO\MedidorConsumo.cs" />
     <Compile Include="DTO\Mensaje.cs" />
+    <Compile Include="DTO\Region.cs" />
     <Compile Include="DTO\TarifaElectrica.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
