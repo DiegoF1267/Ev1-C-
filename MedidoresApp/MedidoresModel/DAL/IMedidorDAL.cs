@@ -10,5 +10,6 @@ namespace MedidoresModel.DAL
      public interface IMedidorDAL
     {
         List<Medidor> GetAll();
+        void save(Medidor m);
     }
 }

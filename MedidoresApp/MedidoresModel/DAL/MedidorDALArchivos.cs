@@ -10,6 +10,8 @@ namespace MedidoresModel.DAL
 {
     public class MedidorDALArchivos : IMedidorDAL
     {
+        static List<Medidor> medidores = new List<Medidor>();
+
         private MedidorDALArchivos()
         {
 
@@ -24,40 +26,18 @@ namespace MedidoresModel.DAL
         private string archivo = Directory.GetCurrentDirectory() + Path.DirectorySeparatorChar + "consumo.txt";
 
 
+
+
+
         public List<Medidor> GetAll()
         {
-            List<Medidor> mensajes = new List<Medidor>();
-            try
-            {
-                using (StreamReader reader = new StreamReader(archivo))
-                {
-                    string texto = null;
-                    do
-                    {
-                        texto = reader.ReadLine();
-                        if (texto != null)
-                        {
-                            string[] textoArray = texto.Split(';');
-                            Medidor m = new Medidor()
-                            {
-                                Nombre = textoArray[0],
-                                Detalle = textoArray[1],
-                                Tipo = textoArray[2],
-                            };
-                            mensajes.Add(m);
-                        }
-                    } while (texto != null);
-                }
-            }
-            catch (IOException ex)
-            {
-
-            }
-            return mensajes;
+            return medidores;
         }
 
-      
-        
+        public void save(Medidor m)
+        {
+            medidores.Add(m);
+        }
     }
 }
 

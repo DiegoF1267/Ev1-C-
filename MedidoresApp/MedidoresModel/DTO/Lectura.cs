@@ -9,8 +9,60 @@ namespace MedidoresModel.DTO
     public class Lectura
     {
         private DateTime fecha;
-        private string valor;
-        private int tipo;
+        private int valor;
+        private string tipo;
         private string unidadMedida;
+
+        public DateTime Fecha
+        {
+            get
+            {
+                return fecha;
+            }
+
+            set
+            {
+                fecha = value;
+            }
+        }
+
+        public int Valor
+        {
+            get
+            {
+                return valor;
+            }
+
+            set
+            {
+                valor = value;
+            }
+        }
+
+        public string Tipo
+        {
+            get
+            {
+                return tipo;
+            }
+
+            set
+            {
+                tipo = value;
+            }
+        }
+
+        public string UnidadMedida
+        {
+            get
+            {
+                return unidadMedida;
+            }
+
+            set
+            {
+                unidadMedida = value;
+            }
+        }
     }
 }

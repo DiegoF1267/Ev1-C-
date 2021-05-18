@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using MedidoresModel.DTO;
 using System.IO;
+using Newtonsoft.Json;
 
 namespace MedidoresModel.DAL
 {
@@ -28,17 +29,66 @@ namespace MedidoresModel.DAL
 
         public List<Lectura> ObtenerLecturaConsumo()
         {
-            throw new NotImplementedException();
+            List<Lectura> lecturas = new List<Lectura>();
+            try
+            {
+                string texto = null;
+                using (StreamReader reader = new StreamReader(archivoConsumo))
+                {
+                    texto = reader.ReadToEnd();
+                }
+                lecturas = JsonConvert.DeserializeObject<List<Lectura>>(texto);
+            }
+            catch (IOException ex)
+            {
+
+            }
+            return lecturas;
         }
 
         public List<Lectura> ObtenerLecturasTrafico()
         {
-            throw new NotImplementedException();
+            List<Lectura> lecturas = new List<Lectura>();
+            try
+            {
+                string texto = null;
+                using (StreamReader reader = new StreamReader(archivoTrafico))
+                {
+                    texto = reader.ReadToEnd();
+                }
+                lecturas = JsonConvert.DeserializeObject<List<Lectura>>(texto);
+            }
+            catch (IOException ex)
+            {
+
+            }
+            return lecturas;
         }
 
         public void registrarLectura(Lectura l)
         {
-            throw new NotImplementedException();
+         try
+            {
+                if (l.Tipo.Equals("Trafico"))
+                {
+                    using (StreamWriter writer = new StreamWriter(archivoTrafico, true))
+                    {
+                        writer.WriteLine(l);
+                        writer.Flush();
+                    }
+                }
+                else
+                {
+                    using (StreamWriter writer = new StreamWriter(archivoConsumo, true))
+                    {
+                        writer.WriteLine(l);
+                        writer.Flush();
+                    }
+                }
+            }catch(IOException ex)
+            {
+
+            }
         }
     }
 }
