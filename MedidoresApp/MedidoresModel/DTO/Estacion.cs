@@ -8,9 +8,6 @@ namespace MedidoresModel.DTO
 {
     public class Estacion
     {
-        private int id;
-        private Region region;
-        private string capacidadMaxPuntos;
-        private string horarioAtencion;
+      private int capacidadMaxima;
     }
 }

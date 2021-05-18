@@ -6,9 +6,16 @@ using System.Threading.Tasks;
 
 namespace MedidoresModel.DTO
 {
-    class MedidorConsumo : Medidor
+    public class MedidorConsumo : Medidor
     {
-        private double consumoKwh;
+        public int leerEstado()
+        {
+            return 0;
+        }
+        public double obtenerKwhConsumidos()
+        {
+            return 0;
+        }
 
     }
 }

@@ -6,10 +6,9 @@ using System.Threading.Tasks;
 
 namespace MedidoresModel.DTO
 {
-    public class Region
+   public class Region
     {
-        private int codigoRegion;
-        private string nombreRegion;
-        private string direccion;
+        private int codigo;
+        private string nombre;
     }
 }

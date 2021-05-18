@@ -9,6 +9,14 @@ namespace MedidoresModel.DTO
     public class Medidor
     {
         private int id;
-        private string tipo;
+        private DateTime fechaInstalación;
+
+
+        public Lectura enviarLectura(Lectura lectura)
+        {
+            return lectura;
+        }
+        
+
     }
 }

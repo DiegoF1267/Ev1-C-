@@ -6,9 +6,11 @@ using System.Threading.Tasks;
 
 namespace MedidoresModel.DTO
 {
-    public class TarifaElectrica
+    public class Lectura
     {
-        private string codigo;
-        private int factor;
+        private DateTime fecha;
+        private string valor;
+        private int tipo;
+        private string unidadMedida;
     }
 }

@@ -4,12 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Cliente
+namespace MedidoresModel.DTO
 {
-    class Program
+    public class EstacionServicio
     {
-        static void Main(string[] args)
-        {
-        }
+        private int capacidadMaxima;
     }
 }

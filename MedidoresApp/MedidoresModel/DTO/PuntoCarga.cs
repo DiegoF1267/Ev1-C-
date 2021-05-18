@@ -6,9 +6,11 @@ using System.Threading.Tasks;
 
 namespace MedidoresModel.DTO
 {
-    public class mensaje
+    public class PuntoCarga
     {
         private int id;
-        private string contenido;
+        private int tipo;
+        private int capacidadMaxima;
+        private DateTime fechaVencimiento;
     }
 }

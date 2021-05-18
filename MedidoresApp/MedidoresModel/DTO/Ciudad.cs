@@ -4,9 +4,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace MedidoresModel.DAL
+namespace MedidoresModel.DTO
 {
-    class LecturaDAL
+    public class Ciudad
     {
+        private int codigo;
+        private string nombre;
     }
 }

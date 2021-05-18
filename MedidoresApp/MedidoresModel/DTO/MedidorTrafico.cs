@@ -6,8 +6,11 @@ using System.Threading.Tasks;
 
 namespace MedidoresModel.DTO
 {
-    class Medidor_trafico : Medidor
+    public class Medidor_trafico : Medidor
     {
-        private int cantidadAutos;
+        public int obtenerCantidadVehiculos()
+        {
+            return 0;
+        }
     }
 }

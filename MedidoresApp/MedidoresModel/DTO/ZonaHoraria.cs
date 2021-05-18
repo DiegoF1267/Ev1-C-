@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace MedidoresModel.DTO
 {
-    public class TarifaElectrica
+   public class ZonaHoraria
     {
         private string codigo;
-        private int factor;
+        private string nombreLargo;
     }
 }

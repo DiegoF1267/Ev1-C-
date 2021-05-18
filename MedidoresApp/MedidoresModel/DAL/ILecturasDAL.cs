@@ -7,8 +7,10 @@ using System.Threading.Tasks;
 
 namespace MedidoresModel.DAL
 {
-     public interface IMedidorDAL
+    public interface ILecturasDAL
     {
-        List<Medidor> GetAll();
+        void registrarLectura(Lectura l);
+        List<Lectura> ObtenerLecturasTrafico();
+        List<Lectura> ObtenerLecturaConsumo();
     }
 }

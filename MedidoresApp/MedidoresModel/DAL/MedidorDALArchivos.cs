@@ -21,27 +21,9 @@ namespace MedidoresModel.DAL
                 instancia = new MedidorDALArchivos();
             return instancia;
         }
-        private string archivo = Directory.GetCurrentDirectory() + Path.DirectorySeparatorChar + "registro.json";
+        private string archivo = Directory.GetCurrentDirectory() + Path.DirectorySeparatorChar + "consumo.txt";
 
-        public void Save(Medidor m)
-        {
-            {
-                try
-                {
-                    using (StreamWriter writer = new StreamWriter(archivo, true))
-                    {
-                        writer.WriteLine(m);
-                        writer.Flush();
-                    }
 
-                }
-                catch (IOException ex)
-                {
-
-                }
-
-            }
-        }
         public List<Medidor> GetAll()
         {
             List<Medidor> mensajes = new List<Medidor>();
