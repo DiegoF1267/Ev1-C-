@@ -46,14 +46,13 @@
   <ItemGroup>
     <Compile Include="Hilos\HiloCliente.cs" />
     <Compile Include="Hilos\HiloServidor.cs" />
+    <Compile Include="Parciales\Program.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Parciales\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

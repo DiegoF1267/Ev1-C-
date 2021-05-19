@@ -8,5 +8,6 @@ namespace MedidoresApp.Hilos
 {
     class HiloServidor
     {
+
     }
 }

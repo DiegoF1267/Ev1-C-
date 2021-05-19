@@ -6,10 +6,12 @@ using System.Threading.Tasks;
 
 namespace MedidoresApp
 {
-    class Program
+     partial class Program
     {
         static void Main(string[] args)
         {
+            while(menu());
+
         }
     }
 }
