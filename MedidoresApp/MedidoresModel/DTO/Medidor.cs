@@ -10,13 +10,18 @@ namespace MedidoresModel.DTO
     {
         private int id;
         private DateTime fechaInstalación;
-
+        
 
         public Lectura enviarLectura(Lectura lectura)
         {
             return lectura;
         }
-        
+        public override string ToString()
+        {
+            //return "{\"id\":\"{0}\"}" ;       //aca puese el salto de pagina
+        return "{\"id\":" + "\"" + id + "\"" + ",\n" +
+                "\"fechaInstalación\":" + "\"" + fechaInstalación + "\"" + "}";
+        }
 
     }
 }

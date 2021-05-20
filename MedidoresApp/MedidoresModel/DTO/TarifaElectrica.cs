@@ -10,5 +10,13 @@ namespace MedidoresModel.DTO
     {
         private string codigo;
         private int factor;
+
+        public override string ToString()
+        {
+            //return "{\"id\":\"{0}\"}" ;       //aca puese el salto de pagina
+            return "{\"codigo\":" + "\"" + codigo + "\"" + ",\n" +
+                    "\"factor\":" + "\"" + factor + "\"" + "}";
+
+        }
     }
 }

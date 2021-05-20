@@ -20,7 +20,7 @@ namespace MedidoresApp.Hilos
 
         public void Ejecutar()
         {
-
+          
         }
     }
 }

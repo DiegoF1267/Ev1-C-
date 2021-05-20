@@ -53,6 +53,15 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="..\MedidoresModel\MedidoresModel.csproj">
+      <Project>{8DBB11E4-CAC3-4839-8444-027F92835B15}</Project>
+      <Name>MedidoresModel</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SocketUtils\SocketUtils.csproj">
+      <Project>{84DEA552-FA7A-4F57-8426-EC8042798E4C}</Project>
+      <Name>SocketUtils</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

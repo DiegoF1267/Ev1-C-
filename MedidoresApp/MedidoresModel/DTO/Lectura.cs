@@ -64,5 +64,14 @@ namespace MedidoresModel.DTO
                 unidadMedida = value;
             }
         }
+        public override string ToString()
+        {
+            //return "{\"id\":\"{0}\"}" ;       //aca puese el salto de pagina
+            return "{\"fecha\":" + "\"" + fecha + "\"" + ",\n" +
+                    "\"valor\":" + "\"" + valor + "\"" + ",\n" +
+                    "\"tipo\":" + "\"" + tipo + "\"" + ",\n" +
+                    "\"unidadMedida\":" + "\"" + unidadMedida + "\"" + "}";
+        
+        }
     }
 }

@@ -35,17 +35,17 @@ namespace MedidoresApp
         {
             bool flag = true;
             Console.WriteLine("Seleccione una opcion");
-            Console.WriteLine("(1) Ingresar Mensajes ");
-            Console.WriteLine("(2) Mostrar Mensajes");
+            Console.WriteLine("(1) Ingresar  ");
+            Console.WriteLine("(2) Mostrar ");
             Console.WriteLine("(0) Salir");
             string respuesta = Console.ReadLine().Trim();
             switch (respuesta)
             {
                 case "1":
-                    IngresarMensajes();
+                    ;
                     break;
                 case "2":
-                    MostrarMensajes();
+                    ;
                     break;
                 case "0":
                     flag = false;

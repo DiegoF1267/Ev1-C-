@@ -12,5 +12,15 @@ namespace MedidoresModel.DTO
         private int tipo;
         private int capacidadMaxima;
         private DateTime fechaVencimiento;
+
+        public override string ToString()
+        {
+            //return "{\"id\":\"{0}\"}" ;       //aca puese el salto de pagina
+            return "{\"id\":" + "\"" + id + "\"" + ",\n" +
+                    "\"tipo\":" + "\"" + tipo + "\"" + ",\n" +
+                    "\"capacidadMaxima\":" + "\"" + capacidadMaxima + "\"" + ",\n" +
+                    "\"fechaVencimiento\":" + "\"" + fechaVencimiento + "\"" + "}";
+
+        }
     }
 }
