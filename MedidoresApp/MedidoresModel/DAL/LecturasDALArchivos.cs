@@ -12,6 +12,8 @@ namespace MedidoresModel.DAL
    public class LecturasDALArchivos : ILecturasDAL
     {
 
+       
+
         private LecturasDALArchivos()
         {
 
@@ -25,7 +27,7 @@ namespace MedidoresModel.DAL
         }
 
         private string archivoTrafico = Directory.GetCurrentDirectory() + Path.DirectorySeparatorChar + "trafico.txt";
-        private string archivoConsumo = Directory.GetCurrentDirectory() + Path.DirectorySeparatorChar + "consumo.json";
+        private string archivoConsumo = Directory.GetCurrentDirectory() + Path.DirectorySeparatorChar + "consumo.txt";
 
         public List<Lectura> ObtenerLecturaConsumo()
         {

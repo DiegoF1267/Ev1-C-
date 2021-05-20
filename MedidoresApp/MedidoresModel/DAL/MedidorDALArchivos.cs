@@ -10,7 +10,12 @@ namespace MedidoresModel.DAL
 {
     public class MedidorDALArchivos : IMedidorDAL
     {
-        static List<Medidor> medidores = new List<Medidor>();
+        static List<Medidor> medidores = new List<Medidor>()
+        {
+           new Medidor() {Id = 1, FechaInstalacion =  Convert.ToDateTime(" 2018-01-01-04-02-00")},
+           new Medidor() {Id = 2, FechaInstalacion =  Convert.ToDateTime(" 2018-01-01-04-02-00")},
+           new Medidor() {Id = 3, FechaInstalacion =  Convert.ToDateTime(" 2018-01-01-04-02-00")}
+        };
 
         private MedidorDALArchivos()
         {
@@ -23,7 +28,6 @@ namespace MedidoresModel.DAL
                 instancia = new MedidorDALArchivos();
             return instancia;
         }
-        private string archivo = Directory.GetCurrentDirectory() + Path.DirectorySeparatorChar + "consumo.txt";
 
 
 

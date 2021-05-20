@@ -9,8 +9,33 @@ namespace MedidoresModel.DTO
     public class Medidor
     {
         private int id;
-        private DateTime fechaInstalación;
-        
+        private DateTime fechaInstalacion;
+
+        public int Id
+        {
+            get
+            {
+                return id;
+            }
+
+            set
+            {
+                id = value;
+            }
+        }
+
+        public DateTime FechaInstalacion
+        {
+            get
+            {
+                return fechaInstalacion;
+            }
+
+            set
+            {
+                fechaInstalacion = value;
+            }
+        }
 
         public Lectura enviarLectura(Lectura lectura)
         {
@@ -20,7 +45,7 @@ namespace MedidoresModel.DTO
         {
             //return "{\"id\":\"{0}\"}" ;       //aca puese el salto de pagina
         return "{\"id\":" + "\"" + id + "\"" + ",\n" +
-                "\"fechaInstalación\":" + "\"" + fechaInstalación + "\"" + "}";
+                "\"fechaInstalación\":" + "\"" + fechaInstalacion + "\"" + "}";
         }
 
     }

@@ -12,6 +12,7 @@ namespace MedidoresModel.DTO
         private int valor;
         private string tipo;
         private string unidadMedida;
+        private string estado;
 
         public DateTime Fecha
         {
@@ -64,6 +65,20 @@ namespace MedidoresModel.DTO
                 unidadMedida = value;
             }
         }
+
+        public string Estado
+        {
+            get
+            {
+                return estado;
+            }
+
+            set
+            {
+                estado = value;
+            }
+        }
+
         public override string ToString()
         {
             //return "{\"id\":\"{0}\"}" ;       //aca puese el salto de pagina

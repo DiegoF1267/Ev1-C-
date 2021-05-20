@@ -8,30 +8,9 @@ namespace MedidoresApp
 {
     public partial class Program
     {
-         static void Fecha()
-        {
-            string Fecha = "Alguna fecha cualquiera";
-            int FechaError = 0;
-            DateTime FechaValida = new DateTime();
+       
 
-            try
-            {
-                FechaValida = DateTime.Parse(Fecha);
-                if (FechaValida.ToString("yyyy-MM-dd-HH-mm-ss") == Fecha)
-                    FechaError = 0;
-                else
-                {
-                    FechaValida = new DateTime();
-                    FechaError = 2;
-                }
-            }
-            catch(Exception ex)
-            {
-                FechaError = 2;
-            }
-        }
-
-          static bool menu()
+        static bool menu()
         {
             bool flag = true;
             Console.WriteLine("Seleccione una opcion");
